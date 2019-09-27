@@ -2,3 +2,10 @@
 layout: home
 author_profile: true
 ---
+
+- Ubuntu bootable USB 만들기
+
+Download the iso file that you want to make.
+hdiutil convert -format UDRW -o ubuntu-18.04.3-live-server-amd64.img ubuntu-18.04.3-live-server-amd64.iso
+diskutil list (looking at disk label to create img file)
+sudo dd if=ubuntu-18.04.3-live-server-amd64.img of=/dev/disk? bs=1m
